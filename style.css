@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, input {
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: yellow;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+#walletButton {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#walletButton:hover {
+  background-color: darkyellow;
+}
+
+/* Main Section Styles */
+main {
+  color: yellow;
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+#info p {
+  margin-bottom: 1rem;
+}
+
+#minting {
+  margin-top: 2rem;
+}
+
+#amountSelector {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#decreaseAmount, #increaseAmount {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#amount {
+  width: 3rem;
+  display: inline-block;
+}
+
+#networkFee label {
+  margin-right: 1rem;
+}
+
+#networkFee input {
+  accent-color: yellow;
+}
+
+#mintButton {
+  display: block;
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: yellow;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer nav a {
+  color: yellow;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: darkyellow;
+}
+
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 1rem;
+  }
+
+  #walletButton, #decreaseAmount, #increaseAmount, #mintButton {
+    padding: 0.5rem 1rem;
+  }
+}
