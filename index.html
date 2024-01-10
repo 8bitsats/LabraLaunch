@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doginals: Dogecoin Ordinals</title>
+    <link href="https://fonts.googleapis.com/css?family=Satoshi:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Doginals</h1>
+        <button id="walletButton">Connect Wallet</button>
+    </header>
+    <main>
+        <section id="info">
+            <p>The first ever low-code Dogecoin ordinals full-stack minting platform.</p>
+            <p>Mint Price: 0.006 DOGE</p>
+            <p>Mint Start: [Dynamic Date Here]</p>
+            <p>Amount Inscribed: 0 / 30</p>
+        </section>
+        <section id="minting">
+            <div id="amountSelector">
+                <button id="decreaseAmount">-</button>
+                <span id="amount">1</span>
+                <button id="increaseAmount">+</button>
+            </div>
+            <div id="networkFee">
+                <label><input type="radio" name="fee" value="slow"> Slow</label>
+                <label><input type="radio" name="fee" value="normal" checked> Normal</label>
+                <label><input type="radio" name="fee" value="fast"> Fast</label>
+            </div>
+            <button id="mintButton">Mint</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="http://ordlibrary.com">ordlibrary.com</a>
+            <a href="http://shibescribe.com">shibescribe.com</a>
+            <a href="http://labradoges.xyz">labradoges.xyz</a>
+            <a href="http://dogedojo.xyz">dogedojo.xyz</a>
+            <a href="http://dogemap.land">dogemap.land</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
